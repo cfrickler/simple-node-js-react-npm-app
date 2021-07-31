@@ -1,4 +1,7 @@
 pipeline {
+    tools { 
+        dockerTool 'Docker'
+    }
     agent {
         docker {
             image 'node:lts-buster-slim'
